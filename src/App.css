@@ -1,105 +1,38 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-ul {
-  list-style: none;
-}
-#root {
-  padding: 40px;
-}
-
-.main {
-  width: 100%;
-  height: 100%;
-  padding: 60px 40px;
-  border: 1px solid #000;
-  border-radius: 20px;
-  margin: 0 auto;
+.App {
   text-align: center;
-  position: relative;
-}
-h1, h2 {margin-bottom: 24px;}
-.home {margin-bottom: 40px;}
-.home img {border-radius: 50%;}
-
-.wrap:not(.home) {
-  padding-top: 40px;
-}
-.wrap:not(.home) + nav {
-  width: 100%;
-  background-color: black;
-  position: absolute;
-  top: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 20px 20px 0 0;
 }
 
-.add .input-wrap {
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-}
-
-.add .input-wrap input, .add .input-wrap button {
-  width: 100%;
-  padding: 16px;
-  border-radius: 8px;
-  border: 1px solid #afafaf;
-}
-.add .input-wrap input:not(:first-of-type) {
-  margin-top: 8px;
-}
-.add .input-wrap button {
-  margin-top: 12px;
-  cursor: pointer;
-}
-.list ul {
-  height: 400px;
-  overflow-y: auto;
-}
-.list ul li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #afafaf;
-  border-radius: 8px;
-  padding: 12px;
-}
-.list ul li:not(:first-of-type) {
-  margin-top: 8px;
-}
-.name {display: flex; align-items: center;}
-.name span {display: block; width: 32px;height: 32px;background-color: beige; font-size: 12px; line-height: 32px; font-weight: 700; border-radius: 50%; margin-right: 8px;}
-.tel-btn {
-  width: 40px;
-  height: 40px;
-  background-color: aquamarine;
-  border-radius: 50%;
-  border: 1px solid aquamarine;
-  cursor: pointer;
-}
-
-nav {
-  display: flex;
   align-items: center;
   justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
-nav a {
-  background-color: black;
-  padding: 20px;
-  color: chartreuse;
-  text-decoration: none;
+
+.App-link {
+  color: #61dafb;
 }
-nav a:hover {
-  font-weight: bold;
-}
-nav a:not(:first-of-type) {
-  margin-left: 12px;
-}
-.wrap:not(.home) + nav a {
-  margin-left: 0;
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -7,9 +7,9 @@ const List = ({data}) => {
             <li key={item.id}>
                 <p className='name'>
                     <span>{item.name[0]}</span>
-                    {item.name} / {item.phone}
+                    {item.name}
                 </p>
-                <button type='button' className='tel-btn'>전화</button>
+                <a className='tel-btn' href={`tel:${item.phone}`}>전화</a>
             </li>
         )
     })
